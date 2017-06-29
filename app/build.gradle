@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 apply plugin: 'kotlin-android'
 
@@ -12,7 +12,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "iostyle.com.skytabview"
+//        applicationId "iostyle.com.skytabview"
         minSdkVersion 17
         targetSdkVersion 25
         versionCode 1
