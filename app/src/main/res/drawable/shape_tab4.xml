@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="0dp"
+        android:left="-1dp"
+        android:top="0dp"
+        android:right="0dp">
+        <shape>
+            <!-- 边缘线的宽度和颜色 #c1c1c1-->
+            <stroke
+                android:width="1dp"
+                android:color="#a6a6a6" />
+            <!-- 中间的背景色 -->
+            <solid android:color="#FFFFFF" />
+            <!-- 直角设置四个角的角度 -->
+            <corners
+                android:bottomLeftRadius="0dp"
+                android:bottomRightRadius="5dp"
+                android:topLeftRadius="0dp"
+                android:topRightRadius="5dp" />
+        </shape>
+    </item>
+</layer-list>
