@@ -14,6 +14,14 @@
    ```
    
 ## Easy to use
+XML 
+```Groovy
+ <iostyle.com.skytabview.View.SkyTabView
+        android:id="@+id/skyTabView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+ ```
+ Activity 
 ```Groovy
   mSkyTabView.setText("TAB1", "TAB2");
   mSkyTabView.setListener(new SkyTabView.OnClickListener() {
