@@ -1,5 +1,6 @@
 # SkyTabView
-[![](https://jitpack.io/v/ITDreamSKY/SkyTabView.svg)](https://jitpack.io/#ITDreamSKY/SkyTabView)
+[![](https://jitpack.io/v/ITDreamSKY/SkyTabView.svg)](https://jitpack.io/#ITDreamSKY/SkyTabView) 
+
 ![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/screen.gif)
 
 ## How to use
