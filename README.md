@@ -15,7 +15,7 @@
    
 ## Easy to use
 ```Groovy
-  mSkyTabView.setText("列表", "地图");
+  mSkyTabView.setText("TAB1", "TAB2");
   mSkyTabView.setListener(new SkyTabView.OnClickListener() {
     @Override
     public void onLeftClick() {
