@@ -4,7 +4,7 @@
 ![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/TAB1.png) 
 ![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/TAB2.png) 
  
- ![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/screen.gif) 
+![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/screenShot.gif) 
 
 ## How to use
   ```Groovy
