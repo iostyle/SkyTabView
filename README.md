@@ -3,7 +3,9 @@
 
 ![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/TAB1.png) 
 ![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/TAB2.png) 
- 
+
+Sample 
+
 ![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/screenShot.gif) 
 
 ## How to use
