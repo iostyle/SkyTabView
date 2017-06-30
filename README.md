@@ -1,9 +1,10 @@
 # SkyTabView
 [![](https://jitpack.io/v/ITDreamSKY/SkyTabView.svg)](https://jitpack.io/#ITDreamSKY/SkyTabView) 
 
-![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/screen.gif) 
 ![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/TAB1.png) 
-![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/TAB2.png)
+![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/TAB2.png) 
+ 
+ ![Alt text](https://github.com/ITDreamSKY/SkyTabView/blob/master/screen.gif) 
 
 ## How to use
   ```Groovy
