@@ -15,7 +15,7 @@ Sample
         maven { url "https://jitpack.io" }
    }
    dependencies {
-        compile 'com.github.ITDreamSKY:SkyTabView:0.1.7'
+        compile 'com.github.ITDreamSKY:SkyTabView:0.1.8'
    }
    ```
    
