@@ -42,3 +42,5 @@ XML
     }
   });
  ```
+## Update
+V0.1.8 Resolve a double app problem.
