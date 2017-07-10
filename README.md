@@ -33,12 +33,14 @@ XML
   mSkyTabView.setListener(new SkyTabView.OnClickListener() {
     @Override
     public void onLeftClick() {
-        Log.d("SKY", "leftBtn is click!");
+        Log.d("SKY", "leftBtn is clicked!");
+        //do something
     }
 
     @Override
     public void onRightClick() {
-        Log.d("SKY", "rightBtn is click!");
+        Log.d("SKY", "rightBtn is clicked!");
+        //do something
     }
   });
  ```
