@@ -61,5 +61,5 @@ XML
   });
  ```
 ## Update
-V0.1.8 Resolve a double app icon problem.  
-V0.1.9 Support custom in XML.
+V0.1.8 Resolve a double app icon problem  
+V0.1.9 Support custom in XML
