@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SkyTabView">
+        <!--选中背景色-->
+        <attr name="selected_background_color" format="color" />
+        <!--未选中背景色-->
+        <attr name="unselected_background_color" format="color" />
+        <!--是否开启动画-->
+        <attr name="animation_enabled" format="boolean" />
+        <!--描边大小-->
+        <attr name="stroke_width" format="dimension" />
+        <!--选中状态描边颜色-->
+        <attr name="stroke_color_selected" format="color" />
+        <!--未选中状态描边颜色-->
+        <attr name="stroke_color_unselected" format="color" />
+        <!--圆角大小-->
+        <attr name="radius" format="dimension" />
+        <!--选中状态字体颜色-->
+        <attr name="text_color_selected" format="color" />
+        <!--未选中状态字体颜色-->
+        <attr name="text_color_unselected" format="color" />
+        <!--默认选中状态-->
+        <attr name="default_selected" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <!--选中状态字体大小-->
+        <attr name="text_size_selected" format="dimension"/>
+        <!--未选中状态字体大小-->
+        <attr name="text_size_unselected" format="dimension"/>
+        <!--tab的宽-->
+        <attr name="tab_width" format="dimension"/>
+        <!--tab的高-->
+        <attr name="tab_height" format="dimension"/>
+
+    </declare-styleable>
+</resources>

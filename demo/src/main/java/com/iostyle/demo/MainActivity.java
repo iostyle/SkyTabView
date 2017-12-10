@@ -1,11 +1,13 @@
-package iostyle.com.skytabview;
+package com.iostyle.demo;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import iostyle.com.skytabview.View.SkyTabView;
+import iostyle.com.demo.R;
+import iostyle.com.skytabview.SkyTabView;
+
 
 /**
  * Created by Administrator on 2017/6/29 0029.
@@ -19,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mSkyTabView = (SkyTabView) findViewById(R.id.skyTabView);
-        mSkyTabView.setText("列表", "地图");
+        mSkyTabView = findViewById(R.id.skyTabView);
+        mSkyTabView.setText("Tab1", "Tab2");
         mSkyTabView.setListener(new SkyTabView.OnClickListener() {
             @Override
             public void onLeftClick() {

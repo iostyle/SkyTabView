@@ -22,7 +22,7 @@ Sample
 ## Easy to use
 XML 
 ```Groovy
- <iostyle.com.skytabview.View.SkyTabView
+ <iostyle.com.skytabview.SkyTabView
         android:id="@+id/skyTabView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">

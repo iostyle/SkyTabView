@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <iostyle.com.skytabview.SkyTabView
+        android:id="@+id/skyTabView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        app:tab_width="90dp"
+        app:tab_height="40dp"
+        app:default_selected="right"
+        app:selected_background_color="#4199fe"
+        app:unselected_background_color="#fff"
+        app:text_color_selected="#fff"
+        app:text_color_unselected="#000"
+        app:text_size_selected="16sp"
+        app:text_size_unselected="14sp"
+        app:stroke_width="1dp"
+        app:radius="5dp"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
