@@ -1,13 +1,14 @@
 package iostyle.com.skytabview;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
+import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,7 @@ import android.widget.LinearLayout;
 
 /**
  * Created by Administrator on 2017/6/29 0029.
+ * @author SKY
  */
 
 public class SkyTabView extends LinearLayout {
@@ -48,8 +50,14 @@ public class SkyTabView extends LinearLayout {
     }
 
     public interface OnClickListener {
+        /**
+         * 左侧按钮点击回调
+         */
         void onLeftClick();
 
+        /**
+         * 右侧按钮点击回调
+         */
         void onRightClick();
     }
 
@@ -58,21 +66,22 @@ public class SkyTabView extends LinearLayout {
         initBtn();
     }
 
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     private void initBtn() {
         mLeftBtn.getLayoutParams().width = tabWidth;
         mLeftBtn.getLayoutParams().height = tabHeight;
         mRightBtn.getLayoutParams().width = tabWidth;
         mRightBtn.getLayoutParams().height = tabHeight;
         if (isLeft) {
-            mLeftBtn.setBackgroundDrawable(leftSelectedDrawable);
-            mRightBtn.setBackgroundDrawable(rightUnSelectedDrawable);
+            mLeftBtn.setBackground(leftSelectedDrawable);
+            mRightBtn.setBackground(rightUnSelectedDrawable);
             mLeftBtn.setTextColor(selectedTextColor);
             mRightBtn.setTextColor(unSelectedTextColor);
             mLeftBtn.setTextSize(TypedValue.COMPLEX_UNIT_PX, selectedTextSize);
             mRightBtn.setTextSize(TypedValue.COMPLEX_UNIT_PX, unSelectedTextSize);
         } else {
-            mLeftBtn.setBackgroundDrawable(leftUnSelectedDrawable);
-            mRightBtn.setBackgroundDrawable(rightSelectedDrawable);
+            mLeftBtn.setBackground(leftUnSelectedDrawable);
+            mRightBtn.setBackground(rightSelectedDrawable);
             mLeftBtn.setTextColor(unSelectedTextColor);
             mRightBtn.setTextColor(selectedTextColor);
             mLeftBtn.setTextSize(TypedValue.COMPLEX_UNIT_PX, unSelectedTextSize);
@@ -82,11 +91,13 @@ public class SkyTabView extends LinearLayout {
         mLeftBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isLeft) return;
+                if (isLeft) {
+                    return;
+                }
                 isLeft = true;
-                mLeftBtn.setBackgroundDrawable(leftSelectedDrawable);
+                mLeftBtn.setBackground(leftSelectedDrawable);
                 mLeftBtn.setTextColor(selectedTextColor);
-                mRightBtn.setBackgroundDrawable(rightUnSelectedDrawable);
+                mRightBtn.setBackground(rightUnSelectedDrawable);
                 mRightBtn.setTextColor(unSelectedTextColor);
                 mLeftBtn.setTextSize(TypedValue.COMPLEX_UNIT_PX, selectedTextSize);
                 mRightBtn.setTextSize(TypedValue.COMPLEX_UNIT_PX, unSelectedTextSize);
@@ -98,11 +109,13 @@ public class SkyTabView extends LinearLayout {
         mRightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!isLeft) return;
+                if (!isLeft) {
+                    return;
+                }
                 isLeft = false;
-                mLeftBtn.setBackgroundDrawable(leftUnSelectedDrawable);
+                mLeftBtn.setBackground(leftUnSelectedDrawable);
                 mLeftBtn.setTextColor(unSelectedTextColor);
-                mRightBtn.setBackgroundDrawable(rightSelectedDrawable);
+                mRightBtn.setBackground(rightSelectedDrawable);
                 mRightBtn.setTextColor(selectedTextColor);
                 mLeftBtn.setTextSize(TypedValue.COMPLEX_UNIT_PX, unSelectedTextSize);
                 mRightBtn.setTextSize(TypedValue.COMPLEX_UNIT_PX, selectedTextSize);
@@ -125,7 +138,6 @@ public class SkyTabView extends LinearLayout {
     private static final int DEFAULT_SELECTED_TEXT_COLOR = Color.parseColor("#ffffff");
     private static final int DEFAULT_UNSELECTED_TEXT_COLOR = Color.parseColor("#000000");
     private static final Boolean DEFAULT_ANIMATION_ENABLED = false;
-
 
     private void initAttributeSet(AttributeSet attrs) {
         final int selectedBackgroundColor;
